@@ -2,12 +2,13 @@ import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { routeConfig } from 'shared/config/routerConfig/routeConfig';
 import { useTranslation } from 'react-i18next';
+import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
 
 const AppRouter = () => {
     const { t } = useTranslation();
 
     return (
-        <Suspense fallback={<div>{t('Загрузка...')}</div>}>
+        <Suspense fallback={<PageLoader />}>
             <Routes>
                 {
                     Object
@@ -17,7 +18,11 @@ const AppRouter = () => {
                                 key={path}
                                 path={path}
                                 element={
-                                    (<div className="page-wrapper">{element}</div>)
+                                    (
+                                        <div className="page-wrapper">
+                                            {element}
+                                        </div>
+                                    )
                                 }
                             />
                         ))
