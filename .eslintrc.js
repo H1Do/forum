@@ -42,6 +42,7 @@ module.exports = {
         'i18next/no-literal-string':
             ['error', { markupOnly: true, ignoreAttribute: ['to'] }],
         'max-len': ['error', { ignoreComments: true }],
+        'i18n-ally-hard-string': 'off',
     },
     globals: {
         __IS_DEV__: true,
