@@ -8,7 +8,6 @@ import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routerConfig/routeConfig';
 import MainIcon from 'shared/assets/icons/main-icon.svg';
 import AboutIcon from 'shared/assets/icons/about-icon.svg';
-import { text } from 'stream/consumers';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
