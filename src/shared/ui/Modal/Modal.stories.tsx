@@ -21,6 +21,7 @@ export const PrimaryDark = Template.bind({});
 PrimaryDark.args = {
     children: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facilis ducimus harum id quaerat architecto consequuntur. Fugit dolores consectetur facilis eum distinctio architecto reiciendis eius, dignissimos, exercitationem hic dolor alias.',
     isOpen: true,
+    className: Theme.DARK,
 };
 PrimaryDark.decorators = [
     ThemeDecorator(Theme.DARK),

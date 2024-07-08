@@ -39,7 +39,7 @@
 
     &Text {
         text-wrap: nowrap;
-        transition: 0.2s opacity;
+        transition: 0.2s all;
     }
 }
 
@@ -55,8 +55,8 @@
     }
 
     .linkText {
-        opacity: 1;
+        pointer-events: none;
+        opacity: 0;
         width: 0;
-        overflow: hidden;
     }
 }

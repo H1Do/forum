@@ -1,7 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Button } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 // import cls from './BugButton.module.scss';
 
 interface BugButtonProps {
@@ -23,6 +22,7 @@ export const BugButton: FC<BugButtonProps> = ({ className }) => {
     return (
         <Button
             onClick={onThrow}
+            theme={ButtonTheme.OUTLINE}
         // eslint-disable-next-line i18next/no-literal-string
         >
             {t('throw error')}

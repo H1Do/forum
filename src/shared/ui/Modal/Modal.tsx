@@ -2,8 +2,8 @@ import React, {
     FC, ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Modal.module.scss';
 import { Portal } from '../Portal/Portal';
+import cls from './Modal.module.scss';
 
 interface ModalProps {
     className?: string;
@@ -45,11 +45,6 @@ export const Modal: FC<ModalProps> = (props) => {
         }
     }, [closeHandler]);
 
-    const mods: Record<string, boolean> = {
-        [cls.opened]: isOpen,
-        [cls.closing]: isClosing,
-    };
-
     useEffect(() => {
         if (isOpen) {
             window.addEventListener('keydown', onKeyDown);
@@ -61,9 +56,19 @@ export const Modal: FC<ModalProps> = (props) => {
         };
     }, [isOpen, onKeyDown]);
 
+    const mods: Record<string, boolean> = {
+        [cls.opened]: isOpen,
+        [cls.closing]: isClosing,
+    };
+
     return (
         <Portal>
-            <div className={classNames(cls.modal, mods, [className])}>
+            <div className={classNames(
+                cls.modal,
+                mods,
+                [className],
+            )}
+            >
                 <div className={cls.overlay} onClick={closeHandler}>
                     <div className={cls.content} onClick={onContentClick}>
                         { children }
