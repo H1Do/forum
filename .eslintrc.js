@@ -31,7 +31,7 @@ module.exports = {
             [2, { extensions: ['.js', '.jsx', '.tsx'] }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+        'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -43,7 +43,7 @@ module.exports = {
         'i18next/no-literal-string':
             ['error', {
                 markupOnly: true,
-                ignoreAttribute: ['to', 'data-testid'],
+                ignoreAttribute: ['to', 'data-testid', 'name'],
             }],
         'max-len': ['error', { ignoreComments: true }],
         'i18n-ally-hard-string': 'off',

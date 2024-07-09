@@ -9,5 +9,8 @@
   "Произошла непредвиденная ошибка": "Unexpected error occurred",
   "Обновить страницу": "Refresh the page",
   "Короткий язык": "En",
-  "О сайте": "About us"
+  "О сайте": "About us",
+  "Войти": "Login",
+  "Введите логин": "Enter the username",
+  "Введите пароль": "Enter the password"
 }
