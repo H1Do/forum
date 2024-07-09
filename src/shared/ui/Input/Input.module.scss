@@ -30,6 +30,10 @@
     position: relative;
 }
 
+.disabled {
+    opacity: 0.8;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;

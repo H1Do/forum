@@ -21,6 +21,7 @@ export const Input = memo((props: InputProps) => {
         type = 'text',
         placeholder,
         autoFocus,
+        disabled,
         ...otherProps
     } = props;
 
@@ -53,7 +54,7 @@ export const Input = memo((props: InputProps) => {
     };
 
     return (
-        <div className={classNames(cls.inputWrapper, {}, [className])}>
+        <div className={classNames(cls.inputWrapper, { [cls.disabled]: disabled }, [className])}>
             {
                 placeholder && (
                     <div className={cls.placeholder}>
@@ -71,10 +72,11 @@ export const Input = memo((props: InputProps) => {
                     onFocus={onFocus}
                     onBlur={onBlur}
                     onSelect={onSelect}
+                    disabled={disabled}
                     {...otherProps}
                 />
                 {
-                    isFocused && (
+                    isFocused && !disabled && (
                         <span
                             className={cls.caret}
                             style={{ left: `${caretPosition * 8.8}px` }}
