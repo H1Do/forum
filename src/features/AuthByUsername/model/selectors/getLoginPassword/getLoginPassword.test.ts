@@ -14,4 +14,9 @@ describe('getLoginPassword.test', () => {
         };
         expect(getLoginPassword(state as StateSchema)).toEqual('123');
     });
+
+    test('Should work with empty state', () => {
+        const state: DeepPartial<StateSchema> = {};
+        expect(getLoginPassword(state as StateSchema)).toEqual('');
+    });
 });

@@ -8,10 +8,15 @@ describe('getLoginIsLoading.test', () => {
             loginForm: {
                 username: 'admin',
                 password: '123',
-                isLoading: false,
-                error: 'something went wrong',
+                isLoading: true,
+                error: '',
             },
         };
+        expect(getLoginIsLoading(state as StateSchema)).toEqual(true);
+    });
+
+    test('Should work with empty state', () => {
+        const state: DeepPartial<StateSchema> = {};
         expect(getLoginIsLoading(state as StateSchema)).toEqual(false);
     });
 });

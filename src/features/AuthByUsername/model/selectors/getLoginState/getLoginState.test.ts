@@ -19,4 +19,9 @@ describe('getLoginIsLoading.test', () => {
             error: 'something went wrong',
         });
     });
+
+    test('Should work with empty state', () => {
+        const state: DeepPartial<StateSchema> = {};
+        expect(getLoginState(state as StateSchema)).toEqual(undefined);
+    });
 });
