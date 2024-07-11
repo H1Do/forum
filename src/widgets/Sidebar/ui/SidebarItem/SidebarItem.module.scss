@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    fill: currentcolor;
+    transition: 0.2s column-gap;
+
+    %text {
+        opacity: 1;
+    }
+
+    &Text {
+        @extend %text;
+
+        text-wrap: nowrap;
+        transition: 0.2s opacity;
+    }
+
+    &.collapsed {
+        column-gap: 0;
+
+        %text {
+            pointer-events: none;
+            opacity: 0;
+            width: 0;
+        }
+    }
+}
