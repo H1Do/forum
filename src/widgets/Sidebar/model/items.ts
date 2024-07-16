@@ -8,6 +8,7 @@ export interface SibebarItemType {
     path: string;
     text: string;
     icon: VFC<SVGProps<SVGSVGElement>>;
+    authOnly?: boolean;
 }
 
 export const SidebarItemsList: SibebarItemType[] = [
@@ -25,5 +26,6 @@ export const SidebarItemsList: SibebarItemType[] = [
         path: RoutePath.profile,
         icon: ProfileIcon,
         text: 'Страница профиля',
+        authOnly: true,
     },
 ];

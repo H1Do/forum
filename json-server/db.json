@@ -1,38 +1,38 @@
 {
-    "posts": [
-      {
-        "id": "1",
-        "title": "json-server",
-        "userId": "1"
-      },
-      {
-        "id": "2",
-        "title": "json-server",
-        "userId": "2"
-      }
-    ],
-    "comments": [
-      {
-        "id": "1",
-        "body": "some comment",
-        "postId": "1"
-      }
-    ],
-    "users": [
-      {
-        "id": "1",
-        "username": "admin",
-        "password": "123"
-      }
-    ],
-    "profile": {
-      "first": "Niyaz",
-      "lastname": "Latypov",
-      "age": 21,
-      "currency": "RUB",
-      "country": "Russia",
-      "city": "Ufa",
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
       "username": "admin",
-      "avatar": "https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg"
-     }
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "Niyaz",
+    "lastname": "Latypov",
+    "age": 21,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Ufa",
+    "username": "admin",
+    "avatar": "https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg"
+  }
 }

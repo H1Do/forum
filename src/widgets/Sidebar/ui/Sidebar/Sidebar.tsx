@@ -1,6 +1,8 @@
+import { getUserAuthData } from 'entities/User';
 import {
     memo, useMemo, useState,
 } from 'react';
+import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
@@ -20,13 +22,17 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
         setCollapsed((collapsed) => !collapsed);
     };
 
-    const itemsList = useMemo(() => SidebarItemsList.map((item) => (
-        <SidebarItem
-            key={item.path}
-            item={item}
-            collapsed={collapsed}
-        />
-    )), [collapsed]);
+    const isAuth = useSelector(getUserAuthData);
+
+    const itemsList = useMemo(() => SidebarItemsList
+        .filter((item) => !(item.authOnly && !isAuth))
+        .map((item) => (
+            <SidebarItem
+                key={item.path}
+                item={item}
+                collapsed={collapsed}
+            />
+        )), [collapsed, isAuth]);
 
     return (
         <div
