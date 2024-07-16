@@ -16,7 +16,7 @@ interface TextProps {
 
 export const Text = memo((props: TextProps) => {
     const {
-        className, title, text, theme,
+        className, title, text, theme = TextTheme.PRIMARY,
     } = props;
 
     return (

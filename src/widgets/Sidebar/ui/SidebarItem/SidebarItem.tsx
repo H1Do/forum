@@ -6,7 +6,7 @@ import { SibebarItemType } from 'widgets/Sidebar/model/items';
 import cls from './SidebarItem.module.scss';
 
 interface SidebarItemProps {
-    item?: SibebarItemType;
+    item: SibebarItemType;
     collapsed?: boolean;
 }
 

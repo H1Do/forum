@@ -3,7 +3,7 @@ import {
 } from '@reduxjs/toolkit';
 import { ReducerManager, StateSchema, StateSchemaKey } from './StateSchema';
 
-export function createReducerManager(initialReducers?: ReducersMapObject<StateSchema>): ReducerManager {
+export function createReducerManager(initialReducers: ReducersMapObject<StateSchema>): ReducerManager {
     const reducers = { ...initialReducers };
 
     let combinedReducer = combineReducers(reducers);
@@ -22,7 +22,7 @@ export function createReducerManager(initialReducers?: ReducersMapObject<StateSc
                 keysToRemove = [];
             }
 
-            return combinedReducer(state, action);
+            return combinedReducer(state, action) as StateSchema;
         },
 
         add: (key: StateSchemaKey, reducer: Reducer) => {

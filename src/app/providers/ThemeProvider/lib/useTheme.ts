@@ -16,5 +16,5 @@ export function useTheme(): UseThemeResult {
         setTheme(newTheme);
     };
 
-    return { toggleTheme, theme };
+    return { toggleTheme, theme: theme || Theme.LIGHT };
 }
