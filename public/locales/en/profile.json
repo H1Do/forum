@@ -13,5 +13,10 @@
   "Ссылка на аватар": "Avatar link",
   "Страна": "A country",
   "Фамилия": "Surname",
-  "Аватар": "Avatar"
+  "Аватар": "Avatar",
+  "Данные не указаны": "Data not provided",
+  "Некорректные данные о стране": "Incorrect country data",
+  "Некорректные данные пользователя": "Incorrect user data",
+  "Некорректный возраст": "Incorrect age",
+  "Серверная ошибка при обновлении профиля": "Server error when updating profile"
 }

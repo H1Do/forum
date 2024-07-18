@@ -12,6 +12,10 @@ export const fetchProfileData = createAsyncThunk<
         try {
             const response = await thunkAPI.extra.api.get<Profile>('/profile');
 
+            if (!response.data) {
+                throw new Error('Response data is empty');
+            }
+
             return response.data;
         } catch (error) {
             return thunkAPI.rejectWithValue(String(error));
