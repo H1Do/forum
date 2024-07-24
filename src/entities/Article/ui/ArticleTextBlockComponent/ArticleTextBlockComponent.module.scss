@@ -1,3 +1,17 @@
-.AritcleTextBlockComponent {
+.ArticleTextBlockComponent {
     width: 100%;
+}
+
+.title {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.paragraph {
+    text-indent: 3em;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
 }

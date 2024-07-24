@@ -3,7 +3,9 @@
     align-items: center;
     column-gap: 10px;
     fill: currentcolor;
-    transition: 0.2s column-gap;
+    transition:
+        var(--transition-duration) column-gap,
+        var(--transition-duration) opacity;
 
     %text {
         opacity: 1;
@@ -13,7 +15,7 @@
         @extend %text;
 
         text-wrap: nowrap;
-        transition: 0.2s opacity;
+        transition: var(--transition-duration) opacity;
     }
 
     &.collapsed {

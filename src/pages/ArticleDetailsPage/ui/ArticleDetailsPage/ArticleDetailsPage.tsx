@@ -13,7 +13,7 @@ const ArticleDetailsPage = memo(({ className }: ArticleDetailsPageProps) => {
     const { t } = useTranslation('article');
     const { id } = useParams<{id: string}>();
 
-    if (!id) {
+    if (!id && __PROJECT__ !== 'storybook') {
         return (
             <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
                 {t('Статья не найдена')}
@@ -23,7 +23,7 @@ const ArticleDetailsPage = memo(({ className }: ArticleDetailsPageProps) => {
 
     return (
         <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-            <ArticleDetails id={id} />
+            <ArticleDetails id={id!} />
         </div>
     );
 });
