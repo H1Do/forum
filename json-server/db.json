@@ -4,13 +4,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg"
     },
     {
       "id": "2",
       "username": "h1do",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://sopranoclub.ru/images/memy-na-avu-275-memnyh-avatarok/file56870.jpeg"
     }
   ],
   "profile": {
@@ -97,19 +99,19 @@
   "comments": [
     {
       "id": "1",
-      "body": "Надеюсь вам понравится, я потратил много времени на написание этой статьи. :)",
+      "text": "Надеюсь вам понравится, я потратил много времени на написание этой статьи. :)",
       "articleId": "1",
       "userId": "1"
     },
     {
       "id": "2",
-      "body": "Хорошая статья, все понравилось! :D",
+      "text": "Хорошая статья, все понравилось! :D",
       "articleId": "1",
       "userId": "2"
     },
     {
       "id": "3",
-      "body": "Давай побольше такого! =DDD",
+      "text": "Давай побольше такого! =DDD",
       "articleId": "1",
       "userId": "2"
     }

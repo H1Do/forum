@@ -33,7 +33,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
-        'react/jsx-props-no-spreading': 'warn',
+        'react/jsx-props-no-spreading': 'off', // spreading
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
@@ -52,7 +52,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         // 'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'no-unused-vars': 'off',
     },

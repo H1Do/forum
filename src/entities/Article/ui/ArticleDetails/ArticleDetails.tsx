@@ -1,13 +1,14 @@
 import { fetchArticlesById } from 'entities/Article/model/services/fetchArticlesById/fetchArticlesById';
 import { articleDetailsReducer } from 'entities/Article/model/slice/articleDetailsSlice';
-import { memo, useCallback, useEffect } from 'react';
+import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import CalendarIcon from 'shared/assets/icons/calendar-icon.svg';
 import EyeIcon from 'shared/assets/icons/eye-icon.svg';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { DynamicModuleLoader } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Icon } from 'shared/ui/Icon/Icon';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
@@ -18,10 +19,10 @@ import {
     getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
-import cls from './ArticleDetails.module.scss';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
+import cls from './ArticleDetails.module.scss';
 
 const initialReducers = {
     articleDetails: articleDetailsReducer,
@@ -52,11 +53,9 @@ export const ArticleDetails = memo(({ className, id }: ArticleDetailsProps) => {
         }
     }, []);
 
-    useEffect(() => {
-        if (__PROJECT__ === 'frontend') {
-            dispatch(fetchArticlesById(id));
-        }
-    }, [dispatch, id]);
+    useInitialEffect(() => {
+        dispatch(fetchArticlesById(id));
+    });
 
     let content;
 

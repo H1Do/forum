@@ -1,4 +1,4 @@
-import React, { ErrorInfo, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { PageError } from 'widgets/PageError';
 
 interface ErrorBoundaryProps {
@@ -16,15 +16,15 @@ class ErrorBoundary
         this.state = { hasError: false };
     }
 
-    static getDerivedStateFromError(error: Error) {
+    static getDerivedStateFromError() {
     // Update state so the next render will show the fallback UI.
         return { hasError: true };
     }
 
-    componentDidCatch(error: Error, info: ErrorInfo) {
-    // You can also log the error to an error reporting service
-        console.log(error, info);
-    }
+    // componentDidCatch(error: Error, info: ErrorInfo) {
+    // // You can also log the error to an error reporting service
+    //     console.log(error, info);
+    // }
 
     render() {
         const { hasError } = this.state;
