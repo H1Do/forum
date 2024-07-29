@@ -15,16 +15,30 @@
       "avatar": "https://sopranoclub.ru/images/memy-na-avu-275-memnyh-avatarok/file56870.jpeg"
     }
   ],
-  "profile": {
-    "first": "Niyaz",
-    "lastname": "Latypov",
-    "age": 21,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Ufa",
-    "username": "admin",
-    "avatar": "https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg"
-  },
+  "profile": [
+    {
+      "id": "1",
+      "first": "Garry",
+      "lastname": "Potter",
+      "age": 17,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Ufa",
+      "username": "admin",
+      "avatar": "https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Niyaz",
+      "lastname": "Latypov",
+      "age": 21,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Ufa",
+      "username": "h1do",
+      "avatar": "https://sopranoclub.ru/images/memy-na-avu-275-memnyh-avatarok/file56870.jpeg"
+    }
+  ],
   "articles": [
     {
       "id": "1",
@@ -33,7 +47,10 @@
       "img": "https://logo-base.com/logo/javascript_js_logo_icon.png",
       "views": 768,
       "createdAt": "26.02.2022",
-      "type": ["IT", "Programming"],
+      "type": [
+        "IT",
+        "Programming"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -114,6 +131,24 @@
       "text": "Давай побольше такого! =DDD",
       "articleId": "1",
       "userId": "2"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Имба, продолжай дальше, дружище!",
+      "id": "BkqFV8U"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Ты зачем сам себя хвалишь?",
+      "id": "FJNHlgn"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Uwu",
+      "id": "pWgBWcW"
     }
   ]
 }

@@ -89,6 +89,44 @@ Normal.decorators = [
             articleDetails: {
                 data: article,
             },
+            articleDetailsComments: {
+                isLoading: false,
+                error: undefined,
+                ids: [
+                    '1',
+                    '2',
+                    '3',
+                ],
+                entities: {
+                    1: {
+                        id: '1',
+                        text: 'Надеюсь вам понравится, я потратил много времени на написание этой статьи. :)',
+                        user: {
+                            id: '1',
+                            username: 'admin',
+                            avatar: 'https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg',
+                        },
+                    },
+                    2: {
+                        id: '2',
+                        text: 'Хорошая статья, все понравилось! :D',
+                        user: {
+                            id: '2',
+                            username: 'h1do',
+                            avatar: 'https://sopranoclub.ru/images/memy-na-avu-275-memnyh-avatarok/file56870.jpeg',
+                        },
+                    },
+                    3: {
+                        id: '3',
+                        text: 'Давай побольше такого! =DDD',
+                        user: {
+                            id: '2',
+                            username: 'h1do',
+                            avatar: 'https://sopranoclub.ru/images/memy-na-avu-275-memnyh-avatarok/file56870.jpeg',
+                        },
+                    },
+                },
+            },
         },
     ),
 ];
