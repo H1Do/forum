@@ -7,7 +7,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import { SidebarItemsList } from '../../model/items';
+import { getSidebarItems } from 'widgets/Sidebar/model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 
@@ -17,12 +17,12 @@ interface SidebarProps {
 
 export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
+    const SidebarItemsList = useSelector(getSidebarItems);
+    const isAuth = useSelector(getUserAuthData);
 
     const onToggle = async () => {
         setCollapsed((collapsed) => !collapsed);
     };
-
-    const isAuth = useSelector(getUserAuthData);
 
     const itemsList = useMemo(() => SidebarItemsList
         .filter((item) => !(item.authOnly && !isAuth))
@@ -32,7 +32,7 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 item={item}
                 collapsed={collapsed}
             />
-        )), [collapsed, isAuth]);
+        )), [collapsed, isAuth, SidebarItemsList]);
 
     return (
         <div

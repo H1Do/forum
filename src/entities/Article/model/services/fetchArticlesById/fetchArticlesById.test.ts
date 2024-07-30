@@ -18,6 +18,11 @@ describe('fetchArticlesById.test', () => {
             views: 768,
             createdAt: '26.02.2022',
             type: [ArticleType.IT],
+            user: {
+                id: '1',
+                username: 'admin',
+                avatar: 'https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg',
+            },
             blocks: [
                 {
                     id: '1',

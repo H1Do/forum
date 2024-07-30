@@ -1,20 +1,38 @@
-import { StateSchema } from 'app/providers/StoreProvider';
-import { getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading } from './articleDetails';
-import { Article, ArticleBlockType, ArticleType } from '../types/article';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import {
+    Article, ArticleBlockType, ArticleType, ArticleView,
+} from 'entities/Article/model/types/article';
+import { ArticleList } from './ArticleList';
 
-const article: Article = {
-    id: '1',
+export default {
+    title: 'entities/ArticleList',
+    component: ArticleList,
+} as ComponentMeta<typeof ArticleList>;
+
+const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+
+const articles = new Array(16).fill(0).map((item, index) => ({
+    id: String(index),
     title: 'JavaScript news',
     subtitle: 'Что нового в JS за 2024 год?',
     img: 'https://logo-base.com/logo/javascript_js_logo_icon.png',
     views: 768,
     createdAt: '26.02.2022',
-    type: [ArticleType.IT],
     user: {
         id: '1',
         username: 'admin',
         avatar: 'https://99px.ru/sstorage/1/2024/07/image_1090724185250512146.jpg',
     },
+    type: [
+        ArticleType.IT,
+        ArticleType.SCIENCE,
+        ArticleType.ECONOMICS,
+        ArticleType.IT,
+        ArticleType.IT,
+        ArticleType.IT,
+        ArticleType.IT,
+        ArticleType.IT,
+    ],
     blocks: [
         {
             id: '1',
@@ -75,55 +93,32 @@ const article: Article = {
             ],
         },
     ],
+})) as Article[];
+
+export const LoadingPlate = Template.bind({});
+LoadingPlate.args = {
+    isLoading: true,
+    view: ArticleView.PLATE,
 };
+LoadingPlate.decorators = [];
 
-describe('getArticleDetailsData.test', () => {
-    test('Should return data', () => {
-        const state: DeepPartial<StateSchema> = {
-            articleDetails: {
-                data: article,
-            },
-        };
+export const LoadingList = Template.bind({});
+LoadingList.args = {
+    isLoading: true,
+    view: ArticleView.LIST,
+};
+LoadingList.decorators = [];
 
-        expect(getArticleDetailsData(state as StateSchema)).toEqual(article);
-    });
+export const Plate = Template.bind({});
+Plate.args = {
+    articles,
+    view: ArticleView.PLATE,
+};
+Plate.decorators = [];
 
-    test('Should work with empty state', () => {
-        const state: DeepPartial<StateSchema> = {};
-        expect(getArticleDetailsData(state as StateSchema)).toBe(undefined);
-    });
-});
-
-describe('getArticleDetailsIsLoading.test', () => {
-    test('Should return loading status', () => {
-        const state: DeepPartial<StateSchema> = {
-            articleDetails: {
-                isLoading: true,
-            },
-        };
-
-        expect(getArticleDetailsIsLoading(state as StateSchema)).toEqual(true);
-    });
-
-    test('Should work with empty state', () => {
-        const state: DeepPartial<StateSchema> = {};
-        expect(getArticleDetailsIsLoading(state as StateSchema)).toBe(undefined);
-    });
-});
-
-describe('getArticleDetailsError.test', () => {
-    test('Should return loading status', () => {
-        const state: DeepPartial<StateSchema> = {
-            articleDetails: {
-                error: 'Some error',
-            },
-        };
-
-        expect(getArticleDetailsError(state as StateSchema)).toEqual('Some error');
-    });
-
-    test('Should work with empty state', () => {
-        const state: DeepPartial<StateSchema> = {};
-        expect(getArticleDetailsError(state as StateSchema)).toBe(undefined);
-    });
-});
+export const List = Template.bind({});
+List.args = {
+    articles,
+    view: ArticleView.LIST,
+};
+List.decorators = [];

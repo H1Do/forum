@@ -1,0 +1,13 @@
+.ArticleList {
+    &.LIST {
+        >:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &.PLATE {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 16px;
+    }
+}

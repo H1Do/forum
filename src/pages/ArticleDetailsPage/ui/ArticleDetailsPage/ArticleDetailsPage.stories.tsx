@@ -18,6 +18,10 @@ const article: Article = {
     img: 'https://logo-base.com/logo/javascript_js_logo_icon.png',
     views: 768,
     createdAt: '26.02.2022',
+    user: {
+        id: '1',
+        username: 'admin',
+    },
     type: [ArticleType.IT],
     blocks: [
         {

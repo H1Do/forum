@@ -55,6 +55,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         // 'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'no-unused-vars': 'off',
+        'react/no-array-index-key': 'off',
     },
     globals: {
         __IS_DEV__: true,
