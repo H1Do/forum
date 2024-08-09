@@ -180,6 +180,414 @@
         "Science"
       ],
       "blocks": []
+    },
+    {
+      "id": "7",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "8",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "9",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "10",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "11",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "12",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "13",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "14",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "15",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "16",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "17",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "18",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "19",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "20",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "21",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "22",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "23",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "24",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "25",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "26",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "27",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "28",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "29",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "30",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "31",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "32",
+      "title": "Будущее искусственного интеллекта",
+      "subtitle": "Искусственный интеллект и его влияние на технологии",
+      "img": "https://sofmix-shop.ru/upload/iblock/ef2/rk3qb096rwe8256x0b9i2iubqlh2rly1.jpg",
+      "views": 1024,
+      "createdAt": "26.02.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Technology"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "33",
+      "title": "Разработка на React",
+      "subtitle": "Современные подходы к разработке с React",
+      "img": "https://programbox.ru/wp-content/uploads/2021/11/29307019.png",
+      "views": 540,
+      "createdAt": "15.03.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "34",
+      "title": "Секреты JavaScript",
+      "subtitle": "Продвинутые техники и паттерны JavaScript",
+      "img": "https://avatars.mds.yandex.net/i?id=acf89ab9dfa003d6dd53413c77a9e79b_l-5362606-images-thumbs&n=13",
+      "views": 890,
+      "createdAt": "10.04.2024",
+      "userId": "1",
+      "type": [
+        "IT",
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "35",
+      "title": "Введение в Python",
+      "subtitle": "Основы Python для начинающих",
+      "img": "https://avatars.dzeninfra.ru/get-zen_doc/2811422/pub_5fce2e51adaafd0b10bb4054_5fce33080a45a91cf4f1ba31/scale_1200",
+      "views": 650,
+      "createdAt": "01.05.2024",
+      "userId": "2",
+      "type": [
+        "Programming"
+      ],
+      "blocks": []
+    },
+    {
+      "id": "36",
+      "title": "Будущее космических исследований",
+      "subtitle": "Новые достижения в космических исследованиях",
+      "img": "https://scitechnews.ru/wp-content/uploads/2024/01/1675426626_gas-kvas-com-p-fonovii-risunok-dlya-rabochego-stola-kosmo-39.jpg",
+      "views": 320,
+      "createdAt": "20.06.2024",
+      "userId": "2",
+      "type": [
+        "Science"
+      ],
+      "blocks": []
     }
   ],
   "comments": [

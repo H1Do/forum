@@ -20,19 +20,11 @@ export const ArticleList = ({
 }: ArticleListProps) => {
     const { t } = useTranslation();
 
-    if (isLoading) {
-        return (
-            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-                {
-                    new Array(view === ArticleView.LIST ? 3 : 9)
-                        .fill(0)
-                        .map((item, index) => (
-                            <ArticleListItemSkeleton view={view} key={index} />
-                        ))
-                }
-            </div>
-        );
-    }
+    const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.LIST ? 3 : 9)
+        .fill(0)
+        .map((item, index) => (
+            <ArticleListItemSkeleton view={view} key={index} />
+        ));
 
     const renderArticle = (article: Article) => (
         <ArticleListItem key={article.id} article={article} view={view} />
@@ -41,9 +33,12 @@ export const ArticleList = ({
     return (
         <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
             {
-                articles.length > 0
+                articles?.length > 0
                     ? articles.map(renderArticle)
                     : null
+            }
+            {
+                isLoading && getSkeletons(view)
             }
         </div>
     );

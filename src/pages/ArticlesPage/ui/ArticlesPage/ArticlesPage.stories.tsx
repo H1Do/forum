@@ -206,6 +206,8 @@ const articlesPageState = {
     },
     isLoading: false,
     view: 'LIST',
+    hasMore: true,
+    page: 1,
 };
 
 export const Primary = Template.bind({});
@@ -223,6 +225,8 @@ IsLoading.decorators = [
         articlesPage: {
             ...articlesPageState as ArticlesPageSchema,
             isLoading: true,
+            entities: {},
+            ids: [],
         },
     }),
 ];
