@@ -208,6 +208,7 @@ const articlesPageState = {
     view: 'LIST',
     hasMore: true,
     page: 1,
+    _inited: true,
 };
 
 export const Primary = Template.bind({});
