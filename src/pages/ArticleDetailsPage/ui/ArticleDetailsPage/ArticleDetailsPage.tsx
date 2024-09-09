@@ -1,6 +1,6 @@
 import { ArticleDetails } from 'entities/Article';
 import { CommentList } from 'entities/Comment';
-import { AddCommentForm } from 'features/addCommentForm';
+import { AddCommentForm } from 'features/AddCommentForm';
 import { getArticleCommentsIsLoading } from 'pages/ArticleDetailsPage/model/selectors/comments';
 import {
     addCommentForArticle,
@@ -19,7 +19,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Button } from 'shared/ui/Button/Button';
 import { Text, TextSize } from 'shared/ui/Text/Text';
-import { Page } from 'shared/ui/Page/Page';
+import { Page } from 'widgets/Page/Page';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailsCommentsSlice';
 import cls from './ArticleDetailsPage.module.scss';
 

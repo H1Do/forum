@@ -125,7 +125,7 @@ const articlesPageState = {
             id: '3',
             title: 'Разработка на React',
             subtitle: 'Современные подходы к разработке с React',
-            img: 'https://programbox.ru/wp-content/uploads/2021/11/29307019.png',
+            img: 'https://avatars.mds.yandex.net/i?id=da46aa0fb877d73fc13b247d071f7abe_l-4760093-images-thumbs&n=13',
             views: 540,
             createdAt: '15.03.2024',
             userId: '1',
