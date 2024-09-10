@@ -1,6 +1,6 @@
 import { ArticleDetails } from 'entities/Article';
 import { CommentList } from 'entities/Comment';
-import { AddCommentForm } from 'features/AddCommentForm';
+import { AddCommentForm } from 'features/addCommentForm';
 import { getArticleCommentsIsLoading } from 'pages/ArticleDetailsPage/model/selectors/comments';
 import {
     addCommentForArticle,
