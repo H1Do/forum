@@ -1,10 +1,11 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticlesPageSchema } from 'pages/ArticlesPage/model/types/articlesPageSchema';
+import { ArticleSortField } from 'entities/Article';
 import ArticlesPage from './ArticlesPage';
 
 export default {
-    title: 'pages/ArticlesPage',
+    title: 'pages/Article/ArticlesPage',
     component: ArticlesPage,
 } as ComponentMeta<typeof ArticlesPage>;
 
@@ -208,6 +209,11 @@ const articlesPageState = {
     view: 'LIST',
     hasMore: true,
     page: 1,
+    limit: 4,
+    sort: ArticleSortField.CREATED,
+    order: 'asc',
+    search: '',
+    type: 'ALL',
     _inited: true,
 };
 

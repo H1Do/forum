@@ -8,6 +8,11 @@
     &.PLATE {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        justify-items: center;
         gap: 16px;
+
+        .notFound {
+            grid-column: span 3;
+        }
     }
 }

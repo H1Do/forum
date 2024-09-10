@@ -28,7 +28,7 @@ describe('fetchArticlesList.test', () => {
     test('Success', async () => {
         thunk.api.get.mockResolvedValue({ data: articlesValue });
 
-        const result = await thunk.callThunk({ page: 1 });
+        const result = await thunk.callThunk({});
 
         expect(thunk.dispatch).toBeCalledTimes(2);
         expect(result.meta.requestStatus).toBe('fulfilled');
@@ -38,7 +38,7 @@ describe('fetchArticlesList.test', () => {
     test('Error', async () => {
         thunk.api.get.mockRejectedValue({});
 
-        const result = await thunk.callThunk({ page: 1 });
+        const result = await thunk.callThunk({});
         expect(thunk.dispatch).toBeCalledTimes(2);
         expect(result.meta.requestStatus).toBe('rejected');
     });

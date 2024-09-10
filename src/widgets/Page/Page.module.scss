@@ -5,3 +5,8 @@
     height: calc(100vh - var(--navbar-height));
     flex-shrink: 1000000000;
 }
+
+.trigger {
+    height: 20px;
+    margin: 10px;
+}

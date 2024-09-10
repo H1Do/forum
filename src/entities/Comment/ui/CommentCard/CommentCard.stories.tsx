@@ -3,7 +3,7 @@ import AvatarPlaceholderImg from 'shared/assets/images/avatar-placeholder.jpg';
 import { CommentCard } from './CommentCard';
 
 export default {
-    title: 'entities/CommentCard',
+    title: 'entities/Comment/CommentCard',
     component: CommentCard,
 } as ComponentMeta<typeof CommentCard>;
 
