@@ -1,3 +1,9 @@
 .commentTitle {
+    margin-block: 24px;
+}
+
+.recommendations {
     margin-top: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
 }

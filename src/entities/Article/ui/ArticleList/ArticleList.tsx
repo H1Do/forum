@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text, TextAlign } from 'shared/ui/Text/Text';
+import { HTMLAttributeAnchorTarget } from 'react';
 import { Article, ArticleView } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
@@ -11,6 +12,7 @@ interface ArticleListProps {
     articles: Article[];
     isLoading?: boolean;
     view?: ArticleView;
+    target?: HTMLAttributeAnchorTarget;
 }
 
 export const ArticleList = ({
@@ -18,6 +20,7 @@ export const ArticleList = ({
     articles,
     view = ArticleView.PLATE,
     isLoading,
+    target = '_self',
 }: ArticleListProps) => {
     const { t } = useTranslation('article');
 
@@ -28,7 +31,7 @@ export const ArticleList = ({
         ));
 
     const renderArticle = (article: Article) => (
-        <ArticleListItem key={article.id} article={article} view={view} />
+        <ArticleListItem key={article.id} article={article} view={view} target={target} />
     );
 
     if (!isLoading && !articles.length) {

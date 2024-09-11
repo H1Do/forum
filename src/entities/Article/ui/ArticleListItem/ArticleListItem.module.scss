@@ -40,6 +40,7 @@
     }
 
     &.PLATE {
+        display: block;
         width: 232px;
         transition: var(--transition-duration) opacity;
         cursor: pointer;
