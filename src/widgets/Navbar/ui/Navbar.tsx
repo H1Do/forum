@@ -7,6 +7,9 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { Text, TextTheme } from 'shared/ui/Text/Text';
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'shared/config/routerConfig/routeConfig';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -50,6 +53,12 @@ export const Navbar = memo(({ className }: NavbarProps) => {
 
     return (
         <nav className={classNames(cls.navbar, {}, [className])}>
+            <AppLink to={RoutePath.main} className={cls.mainLink}>
+                <Text className={cls.appName} title={t('HidoSocials')} theme={TextTheme.INVERTED} />
+            </AppLink>
+            <AppLink to={RoutePath.article_create} className={cls.mainLink} theme={AppLinkTheme.SECONDARY}>
+                {t('Создать статью')}
+            </AppLink>
             <Button
                 theme={ButtonTheme.CLEAR_INVERTED}
                 className={cls.links}

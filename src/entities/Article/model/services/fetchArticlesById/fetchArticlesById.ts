@@ -10,7 +10,11 @@ export const fetchArticlesById = createAsyncThunk<
     'articleDetails/fetchArticleById',
     async (id, thunkApi) => {
         try {
-            const response = await thunkApi.extra.api.get<Article>(`/articles/${id}`);
+            const response = await thunkApi.extra.api.get<Article>(`/articles/${id}`, {
+                params: {
+                    _expand: 'user',
+                },
+            });
 
             if (!response.data) {
                 throw new Error('Response data is empty');

@@ -4,7 +4,12 @@
     background: var(--inverted-bg-color);
     display: flex;
     align-items: center;
+    gap: 20px;
     padding: 20px;
+}
+
+.appName {
+    color: var(--inverted-primary-color);
 }
 
 .links {

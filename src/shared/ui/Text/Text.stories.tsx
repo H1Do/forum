@@ -23,6 +23,13 @@ Error.args = {
     theme: TextTheme.ERROR,
 };
 
+export const Inverted = Template.bind({});
+Inverted.args = {
+    title: 'Title lorem ipsum dolor',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure autem provident cumque tempore quidem cum modi deserunt omnis. Minima, repudiandae aliquam? Consectetur aliquid incidunt maxime eius veritatis molestiae tempore praesentium!',
+    theme: TextTheme.INVERTED,
+};
+
 export const OnlyTitle = Template.bind({});
 OnlyTitle.args = {
     title: 'Title lorem ipsum dolor',
