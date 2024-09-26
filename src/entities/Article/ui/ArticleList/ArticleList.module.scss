@@ -1,16 +1,18 @@
-.LIST {
-    >:not(:last-child) {
-        margin-bottom: 16px;
+.PLATE {
+    .listItem {
+        display: inline-flex;
+        height: 300px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
     }
 }
 
-.PLATE {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    justify-items: center;
-    gap: 16px;
-
-    .notFound {
-        grid-column: span 3;
+.LIST {
+    .listItem:not(:last-child) {
+        margin-bottom: 16px;
     }
 }
