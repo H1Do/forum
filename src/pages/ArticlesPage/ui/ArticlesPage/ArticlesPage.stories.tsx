@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticlesPageSchema } from 'pages/ArticlesPage/model/types/articlesPageSchema';
 import { ArticleSortField } from 'entities/Article';
+import { ArticlesPageSchema } from '../../model/types/articlesPageSchema';
 import ArticlesPage from './ArticlesPage';
 
 export default {

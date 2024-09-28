@@ -1,5 +1,3 @@
-import { fetchArticlesById } from 'entities/Article/model/services/fetchArticlesById/fetchArticlesById';
-import { articleDetailsReducer } from 'entities/Article/model/slice/articleDetailsSlice';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -15,6 +13,8 @@ import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import {
     Text, TextAlign, TextSize, TextTheme,
 } from 'shared/ui/Text/Text';
+import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
+import { fetchArticlesById } from '../../model/services/fetchArticlesById/fetchArticlesById';
 import {
     getArticleDetailsData, getArticleDetailsError, getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';

@@ -1,4 +1,3 @@
-import { canEditArticle } from 'pages/ArticleDetailsPage/model/selectors/article';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -7,6 +6,7 @@ import { RoutePath } from 'shared/config/routerConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import { getArticleDetailsData } from 'entities/Article';
+import { canEditArticle } from '../../model/selectors/article';
 import cls from './ArticleDetailsPageHeader.module.scss';
 
 interface ArticleDetailsPageHeaderProps {

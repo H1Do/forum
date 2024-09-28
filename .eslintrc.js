@@ -22,6 +22,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'hido-plugin',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -56,6 +57,7 @@ module.exports = {
         // 'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
         'no-unused-vars': 'off',
         'react/no-array-index-key': 'off',
+        'hido-plugin/path-checker': 'error',
     },
     globals: {
         __IS_DEV__: true,

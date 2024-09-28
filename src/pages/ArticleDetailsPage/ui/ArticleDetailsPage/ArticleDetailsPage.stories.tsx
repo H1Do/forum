@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Article } from 'entities/Article';
 import { ArticleBlockType, ArticleSortField, ArticleType } from 'entities/Article/model/types/article';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleDetailsRecommendationsSchema } from 'pages/ArticleDetailsPage/model/types/ArticleDetailsRecommendationsSchema';
+import { ArticleDetailsRecommendationsSchema } from '../../model/types/ArticleDetailsRecommendationsSchema';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 export default {
