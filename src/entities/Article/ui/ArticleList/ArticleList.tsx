@@ -1,10 +1,10 @@
+import { HTMLAttributeAnchorTarget } from 'react';
 import { useTranslation } from 'react-i18next';
+import {
+    List, ListRowProps, WindowScroller,
+} from 'react-virtualized';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text, TextAlign } from 'shared/ui/Text/Text';
-import { HTMLAttributeAnchorTarget } from 'react';
-import {
-    AutoSizer, List, ListRowProps, WindowScroller,
-} from 'react-virtualized';
 import { PAGE_ID } from 'widgets/Page/Page';
 import { Article, ArticleView } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
@@ -40,7 +40,7 @@ export const ArticleList = ({
     const rowCount = isList ? articles.length : Math.ceil(articles.length / itemsPerRow);
 
     const rowRender = ({
-        index, isScrolling, key, style,
+        index, key, style,
     }: ListRowProps) => {
         const items = [];
         const fromIndex = index * itemsPerRow;
@@ -104,10 +104,13 @@ export const ArticleList = ({
                         isScrolling={isScrolling}
                         scrollTop={scrollTop}
                     />
-                    {isLoading && getSkeletons(view)}
+                    {isLoading && (
+                        <div className={cls.row}>
+                            {getSkeletons(view)}
+                        </div>
+                    )}
                 </div>
             )}
         </WindowScroller>
-
     );
 };

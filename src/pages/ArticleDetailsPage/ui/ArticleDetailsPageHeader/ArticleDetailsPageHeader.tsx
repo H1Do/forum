@@ -6,6 +6,7 @@ import { RoutePath } from 'shared/config/routerConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
 import { getArticleDetailsData } from 'entities/Article';
+import { HStack } from 'shared/ui/Stack';
 import { canEditArticle } from '../../model/selectors/article';
 import cls from './ArticleDetailsPageHeader.module.scss';
 
@@ -34,7 +35,7 @@ export const ArticleDetailsPageHeader = ({ className }: ArticleDetailsPageHeader
     );
 
     return (
-        <div className={classNames(cls.ArticleDetailsPageHeader, {}, [className])}>
+        <HStack max gap="8" justify="start" className={classNames(cls.ArticleDetailsPageHeader, {}, [className])}>
             <Button onClick={onBackToList}>
                 {t('Назад к списку')}
             </Button>
@@ -45,6 +46,6 @@ export const ArticleDetailsPageHeader = ({ className }: ArticleDetailsPageHeader
                     </Button>
                 )
             }
-        </div>
+        </HStack>
     );
 };

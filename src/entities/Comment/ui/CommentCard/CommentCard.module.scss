@@ -1,19 +1,9 @@
 .CommentCard {
+    width: 100%;
     padding: 12px;
     border: 1px solid var(--primary-color);
 
     &.loading {
         border: none;
     }
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
-    width: max-content;
-}
-
-.text {
-    margin-top: 12px;
 }

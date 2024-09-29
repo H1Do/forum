@@ -99,6 +99,7 @@ export const LoadingPlate = Template.bind({});
 LoadingPlate.args = {
     isLoading: true,
     view: ArticleView.PLATE,
+    articles: [],
 };
 LoadingPlate.decorators = [];
 
@@ -106,6 +107,7 @@ export const LoadingList = Template.bind({});
 LoadingList.args = {
     isLoading: true,
     view: ArticleView.LIST,
+    articles: [],
 };
 LoadingList.decorators = [];
 
