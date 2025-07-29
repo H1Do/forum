@@ -71,3 +71,17 @@ SizeL.args = {
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure autem provident cumque tempore quidem cum modi deserunt omnis. Minima, repudiandae aliquam? Consectetur aliquid incidunt maxime eius veritatis molestiae tempore praesentium!',
     size: TextSize.L,
 };
+
+export const SizeM = Template.bind({});
+SizeM.args = {
+    title: 'Title lorem ipsum dolor',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure autem provident cumque tempore quidem cum modi deserunt omnis. Minima, repudiandae aliquam? Consectetur aliquid incidunt maxime eius veritatis molestiae tempore praesentium!',
+    size: TextSize.M,
+};
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Title lorem ipsum dolor',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure autem provident cumque tempore quidem cum modi deserunt omnis. Minima, repudiandae aliquam? Consectetur aliquid incidunt maxime eius veritatis molestiae tempore praesentium!',
+    size: TextSize.S,
+};

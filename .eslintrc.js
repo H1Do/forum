@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 module.exports = {
     env: {
         browser: true,
@@ -43,7 +44,7 @@ module.exports = {
         'i18next/no-literal-string':
             ['error', {
                 markupOnly: true,
-                ignoreAttribute: ['to', 'data-testid', 'name', 'target', 'direction', 'justify', 'align', 'gap'],
+                ignoreAttribute: ['to', 'data-testid', 'name', 'target', 'direction', 'justify', 'align', 'gap', 'role'],
             }],
         'max-len': ['error', { ignoreComments: true, code: 120 }],
         'i18n-ally-hard-string': 'off',
