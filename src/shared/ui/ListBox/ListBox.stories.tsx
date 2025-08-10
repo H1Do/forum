@@ -20,6 +20,7 @@ Normal.args = {
         { value: '2', content: 'Item 2' },
         { value: '3', content: 'Item 3' },
     ],
+    direction: 'bottom right',
     value: '1',
     onChange: (value) => console.log(value),
     label: 'Select Item',
